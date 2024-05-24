@@ -1,0 +1,15 @@
+(venv) [swipe@fedora nightcrawler]$ git checkout rebase-me
+branch 'rebase-me' set up to track 'origin/rebase-me'.
+Switched to a new branch 'rebase-me'
+(venv) [swipe@fedora nightcrawler]$ git rebase --help
+(venv) [swipe@fedora nightcrawler]$ 
+(venv) [swipe@fedora nightcrawler]$ git rebase --continue
+fatal: No rebase in progress?
+(venv) [swipe@fedora nightcrawler]$ git fetch origin
+(venv) [swipe@fedora nightcrawler]$ git rebase main
+Successfully rebased and updated refs/heads/rebase-me.
+(venv) [swipe@fedora nightcrawler]$ git add .
+(venv) [swipe@fedora nightcrawler]$ git push origin rebase-me
+remote: Permission to pleasantencounter/nightcrawler.git denied to SwiperNo.
+fatal: unable to access 'https://github.com/pleasantencounter/nightcrawler.git/': The requested URL returned error: 403
+(venv) [swipe@fedora nightcrawler]$ 

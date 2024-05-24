@@ -48,5 +48,3 @@ Welcome to the Interview Questions Project repository! This project aims to be a
 1. checkout rebase-me branch
 2. rebase branch against main
 3. run git log to check the commit history
-
-# Test
