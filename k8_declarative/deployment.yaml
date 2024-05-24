@@ -14,6 +14,10 @@ spec:
       labels:
         app: httpd
     spec:
+      initContainers:
+      - name: python
+        image: python
+        command: ['/bin/sh', '-c', 'echo "Hello World!"']
       containers:
       - name: httpd
         image: httpd:latest
