@@ -33,15 +33,15 @@ class Weather:
 
       response = self._get(coordinates_url)
       coordinates = response.json()
-
-      latitude = coordinates['ltu']
-      longitude = coordinates['lgn']
-
+      print(coordinates)
+      latitude = coordinates['lat']
+      longitude = coordinates['lon']
+      print(coordinates)
       return latitude, longitude
 
   def get_daily_weather(self, latitude: str, longitude: str):
     weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={self.api_key}"
-    self.get(weather_url)
+    self._get(weather_url)
 
 if __name__ == "__main__":
 
